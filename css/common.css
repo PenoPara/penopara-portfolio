@@ -1,0 +1,1109 @@
+/* Partial============================================ */
+/*---------------------------------
+Color Setting
+---------------------------------*/
+/*---------------------------------
+ Responsive
+---------------------------------*/
+/*---------------------------------
+Color Setting
+---------------------------------*/
+/*---------------------------------
+ Responsive
+---------------------------------*/
+/* ============================================ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+* {
+  float: none;
+  position: static; }
+
+.preload * {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  font-family: 'Noto Sans Japanese',sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  color: #585750;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  position: relative; }
+  @media screen and (min-width: 767px) {
+    body {
+      width: 100%;
+      display: block;
+      margin: auto; } }
+  @media screen and (min-width: 1023px) {
+    body {
+      width: 100%;
+      height: auto;
+      min-width: 1200px; } }
+
+@fontface {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: local("NotoSansJP-Regular.otf"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf) format("op"); }
+@fontface {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: local("NotoSansJP-Regular.otf"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf) format("op"); }
+@fontface {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 700;
+  src: local("NotoSansJP-Regular.otf"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf) format("op"); }
+.title {
+  color: #A3936B;
+  font-family: 'Echo R';
+  font-size: 22px;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  padding: 30px 0 16px; }
+  @media screen and (min-width: 767px) {
+    .title {
+      font-size: 28px;
+      padding: 40px 0 20px; } }
+  @media screen and (min-width: 1023px) {
+    .title {
+      font-size: 33px;
+      padding: 80px 0 20px; } }
+
+.callToAction {
+  background-color: #EBE5D2;
+  padding: 48px 16px;
+  color: #AD9C76; }
+  @media screen and (min-width: 1023px) {
+    .callToAction {
+      padding: 64px; } }
+  .callToAction p {
+    font-size: 17px;
+    margin-bottom: 16px; }
+    @media screen and (min-width: 1023px) {
+      .callToAction p {
+        font-size: 20px; } }
+    .callToAction p span::before {
+      content: "\a";
+      white-space: pre; }
+    @media screen and (min-width: 767px) {
+      .callToAction p span::before {
+        content: ""; } }
+    @media screen and (min-width: 1023px) {
+      .callToAction p span::before {
+        content: ""; } }
+  .callToAction button {
+    background-color: #AD9C76;
+    padding: 20px 32px;
+    width: 100%;
+    border-radius: 4px;
+    position: relative; }
+    @media screen and (min-width: 767px) {
+      .callToAction button {
+        width: 45%; } }
+    @media screen and (min-width: 1023px) {
+      .callToAction button {
+        width: 30%; } }
+    .callToAction button a {
+      font-size: 17px;
+      color: #fff;
+      letter-spacing: 0.2rem; }
+      @media screen and (min-width: 767px) {
+        .callToAction button a {
+          font-size: 20px; } }
+      .callToAction button a:after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f105";
+        position: absolute;
+        right: 10px; }
+    .callToAction button .faStyle {
+      margin-left: 16px; }
+
+/*---------------------------------
+Color Setting
+---------------------------------*/
+/*---------------------------------
+ Responsive
+---------------------------------*/
+/* ============================================ */
+header {
+  width: 100%;
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  z-index: 10;
+  background-color: #fff;
+  border-bottom: solid 1px #f3f3f3;
+  position: fixed; }
+  @media (orientation: landscape) and (min-width: 479px) {
+    header {
+      height: 7.5vw; } }
+  @media screen and (min-width: 767px) {
+    header {
+      height: 8vw; } }
+  @media (orientation: landscape) and (min-width: 767px) {
+    header {
+      height: 7.5vw; } }
+  @media screen and (min-width: 1023px) {
+    header {
+      height: 5.5vw; } }
+  header .container {
+    width: 100%;
+    margin: auto;
+    width: 100%;
+    z-index: 20; }
+    @media screen and (min-width: 1023px) {
+      header .container {
+        width: 980px;
+        padding: 12px 0;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative; } }
+    @media screen and (min-width: 1023px) {
+      header .container .logo {
+        position: relative; } }
+    header .container .logo img {
+      display: inline-block;
+      width: 100%; }
+      @media screen and (min-width: 767px) {
+        header .container .logo img {
+          display: inline-block;
+          width: 100%; } }
+      @media screen and (min-width: 1023px) {
+        header .container .logo img {
+          display: block; } }
+    header .container .logo h1 {
+      width: 100%;
+      margin: auto;
+      max-width: 50vw; }
+      @media (orientation: landscape) and (min-width: 479px) {
+        header .container .logo h1 {
+          max-width: 40vw; } }
+      @media screen and (min-width: 767px) {
+        header .container .logo h1 {
+          max-width: 39vw; } }
+      @media (orientation: landscape) and (min-width: 767px) {
+        header .container .logo h1 {
+          max-width: 39vw; } }
+      @media screen and (min-width: 1023px) {
+        header .container .logo h1 {
+          max-width: 300px;
+          display: block;
+          padding: 0;
+          margin: 0; } }
+      header .container .logo h1 a {
+        display: block; }
+
+.gmenu {
+  position: absolute;
+  top: -700px;
+  color: #8D653E;
+  font-family: 'din-2014', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+  height: calc(108vw - 8vw);
+  z-index: 10; }
+  @media (orientation: landscape) and (min-width: 479px) {
+    .gmenu {
+      height: calc(65vw - 9vw);
+      overflow-y: scroll;
+      padding-bottom: 100px; } }
+  @media (orientation: landscape) and (min-width: 767px) {
+    .gmenu {
+      height: calc(56vw - 8vw);
+      overflow-y: scroll;
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 1023px) {
+    .gmenu {
+      position: relative;
+      top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: auto;
+      margin-left: auto;
+      overflow: visible; } }
+  .gmenu li {
+    font-size: 1.5rem; }
+    @media screen and (min-width: 767px) {
+      .gmenu li {
+        font-size: 1.8rem; } }
+    @media screen and (min-width: 1023px) {
+      .gmenu li {
+        font-size: 1rem;
+        padding-left: 60px; } }
+    .gmenu li a {
+      text-align: center;
+      display: block;
+      padding: 20px 0; }
+      @media screen and (min-width: 767px) {
+        .gmenu li a {
+          text-align: center;
+          display: block;
+          padding: 22px 0; } }
+      @media screen and (min-width: 1023px) {
+        .gmenu li a {
+          padding: 8px 0 12px; } }
+    .gmenu li:nth-child(n+4) {
+      display: inline-block;
+      padding-top: 10px;
+      width: 49%; }
+      @media screen and (min-width: 767px) {
+        .gmenu li:nth-child(n+4) {
+          display: inline-block;
+          padding-top: 20px;
+          width: 49%; } }
+      @media screen and (min-width: 1023px) {
+        .gmenu li:nth-child(n+4) {
+          padding-top: 0px;
+          width: auto; } }
+    @media screen and (min-width: 1023px) {
+      .gmenu li:last-child {
+        padding-left: 40px; } }
+    .gmenu li .faStyle {
+      color: #8D653E; }
+      @media screen and (min-width: 767px) {
+        .gmenu li .faStyle {
+          font-size: 2rem; } }
+      @media screen and (min-width: 1023px) {
+        .gmenu li .faStyle {
+          font-size: 1.2rem; } }
+
+.js-cover {
+  display: none;
+  background: #f3f3f3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  pointer-events: none; }
+  @media screen and (min-width: 1023px) {
+    .js-cover {
+      display: none; } }
+
+.humburgerBtn {
+  z-index: 30;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: fixed;
+  right: 2vw;
+  top: 5vw; }
+  @media (orientation: landscape) and (min-width: 479px) {
+    .humburgerBtn {
+      right: 2vw;
+      top: 3vw; } }
+  @media screen and (min-width: 767px) {
+    .humburgerBtn {
+      right: 2.5vw;
+      top: 25px; } }
+  .humburgerBtn span {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: #8D653E;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+    @media screen and (min-width: 767px) {
+      .humburgerBtn span {
+        width: 35px; } }
+    .humburgerBtn span.top, .humburgerBtn span.bottom {
+      position: absolute;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
+    .humburgerBtn span.top {
+      top: -8px; }
+      @media screen and (min-width: 767px) {
+        .humburgerBtn span.top {
+          top: -12px; } }
+    .humburgerBtn span.bottom {
+      top: 8px; }
+      @media screen and (min-width: 767px) {
+        .humburgerBtn span.bottom {
+          top: 12px; } }
+  @media screen and (min-width: 1023px) {
+    .humburgerBtn {
+      display: none; } }
+
+.isOpen span.middle {
+  background: rgba(255, 255, 255, 0); }
+.isOpen span.top {
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+  top: 0px; }
+.isOpen span.bottom {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  top: 0px; }
+
+/*---------------------------------
+Color Setting
+---------------------------------*/
+/*---------------------------------
+ Responsive
+---------------------------------*/
+/* ============================================ */
+footer {
+  background-color: #5C5147;
+  color: #fff;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 15px; }
+  @media screen and (min-width: 1023px) {
+    footer {
+      width: 100%;
+      padding: 32px 0; } }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 16px 0; }
+  footer li {
+    padding: 0 16px; }
+    footer li .faStyle {
+      font-size: 1.3rem; }
+
+/*---------------------------------
+Color Setting
+---------------------------------*/
+/*---------------------------------
+ Responsive
+---------------------------------*/
+/* ============================================ */
+.topMainImage {
+  background-image: url("../images/header_bg.png");
+  background-repeat: repeat;
+  width: 100%;
+  padding: 60px 16px 15px; }
+  @media screen and (min-width: 767px) {
+    .topMainImage {
+      padding-top: 80px; } }
+  @media screen and (min-width: 1023px) {
+    .topMainImage {
+      padding-top: 64px; } }
+  @media screen and (min-width: 1023px) {
+    .topMainImage .container {
+      padding: 30px 0; } }
+  .topMainImage .container h2 {
+    color: #A3936B;
+    font-family: 'Echo R';
+    font-size: 22px;
+    line-height: 1.8rem;
+    letter-spacing: 0rem; }
+    @media screen and (min-width: 767px) {
+      .topMainImage .container h2 {
+        font-size: 28px;
+        line-height: 2rem;
+        letter-spacing: 0.1rem; } }
+    @media screen and (min-width: 1023px) {
+      .topMainImage .container h2 {
+        font-size: 33px;
+        line-height: 2.5rem;
+        letter-spacing: 0.3rem; } }
+    .topMainImage .container h2 img {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 300px;
+      padding: 25px 0; }
+      @media screen and (min-width: 767px) {
+        .topMainImage .container h2 img {
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 300px;
+          padding: 70px 0 25px; } }
+      @media screen and (min-width: 1023px) {
+        .topMainImage .container h2 img {
+          width: 100%;
+          max-width: 297px;
+          padding: 64px 0 35px; } }
+    .topMainImage .container h2 span::before, .topMainImage .container h2 span::after {
+      content: "\a";
+      white-space: pre; }
+    @media screen and (min-width: 767px) {
+      .topMainImage .container h2 span::before {
+        content: "\a";
+        white-space: pre; }
+      .topMainImage .container h2 span::after {
+        content: ""; } }
+    @media screen and (min-width: 1023px) {
+      .topMainImage .container h2 span::before {
+        content: "\a";
+        white-space: pre; }
+      .topMainImage .container h2 span::after {
+        content: ""; } }
+  .topMainImage .container p {
+    font-size: 12px;
+    padding: 15px 0;
+    font-weight: 700;
+    line-height: 1.3rem;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 767px) {
+      .topMainImage .container p {
+        font-size: 14px;
+        padding: 25px 0;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 30px; } }
+    @media screen and (min-width: 1023px) {
+      .topMainImage .container p {
+        padding-top: 20px;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 40px; } }
+
+.topContainer .about {
+  width: 100%;
+  display: block;
+  padding: 15px 0 30px; }
+  @media screen and (min-width: 767px) {
+    .topContainer .about {
+      padding: 15px 20px 70px; } }
+  @media screen and (min-width: 1023px) {
+    .topContainer .about {
+      width: 1200px;
+      height: 450px;
+      margin: 0 auto; } }
+  .topContainer .about img {
+    width: 100%;
+    max-width: 250px; }
+    @media screen and (min-width: 767px) {
+      .topContainer .about img {
+        max-width: 230px; } }
+    @media screen and (min-width: 1023px) {
+      .topContainer .about img {
+        max-width: 250px; } }
+  .topContainer .about p {
+    color: #A3936B;
+    font-weight: 300;
+    font-size: 17px;
+    padding-top: 12px; }
+    @media screen and (min-width: 767px) {
+      .topContainer .about p {
+        font-size: 15px;
+        padding-top: 20px; } }
+    @media screen and (min-width: 1023px) {
+      .topContainer .about p {
+        font-size: 18px;
+        padding-top: 20px; } }
+  .topContainer .about ul {
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 767px) {
+      .topContainer .about ul {
+        display: table;
+        margin: 0 auto;
+        padding-top: 20px; } }
+    @media screen and (min-width: 1023px) {
+      .topContainer .about ul {
+        display: table;
+        margin: 0 auto;
+        padding-top: 20px; } }
+  .topContainer .about li {
+    display: block;
+    padding: 26px 0; }
+    .topContainer .about li:nth-child(2) img {
+      max-width: 150px; }
+    @media screen and (min-width: 767px) {
+      .topContainer .about li {
+        padding: 0 12px;
+        display: table-cell; }
+        .topContainer .about li:nth-child(2) {
+          padding: 0 28px; }
+          .topContainer .about li:nth-child(2) img {
+            max-width: 130px; } }
+    @media screen and (min-width: 1023px) {
+      .topContainer .about li {
+        padding: 0 70px;
+        display: table-cell; }
+        .topContainer .about li:nth-child(2) img {
+          max-width: 150px; } }
+.topContainer .achievement {
+  width: 100%;
+  display: block;
+  padding: 15px 0 60px; }
+  @media screen and (min-width: 767px) {
+    .topContainer .achievement {
+      padding-bottom: 50px; } }
+  @media screen and (min-width: 1023px) {
+    .topContainer .achievement {
+      margin: 0 auto;
+      padding-bottom: 100px; } }
+  .topContainer .achievement .item {
+    padding: 30px 0; }
+    @media screen and (min-width: 1023px) {
+      .topContainer .achievement .item {
+        width: 80%;
+        margin: 0 auto; } }
+    .topContainer .achievement .item .slider {
+      margin-bottom: 30px; }
+      @media screen and (min-width: 1023px) {
+        .topContainer .achievement .item .slider {
+          padding: 10px 0; } }
+    .topContainer .achievement .item .sliderItem {
+      width: 100%;
+      max-width: 216px;
+      padding-right: 10px; }
+      .topContainer .achievement .item .sliderItem img {
+        width: 100%; }
+  .topContainer .achievement .privateAchievement {
+    padding: 0 16px; }
+    .topContainer .achievement .privateAchievement button {
+      border: solid 1px #AD9C76;
+      background-color: #fff;
+      padding: 20px 32px;
+      width: 100%;
+      border-radius: 4px;
+      margin: 20px 0;
+      position: relative; }
+      @media screen and (min-width: 767px) {
+        .topContainer .achievement .privateAchievement button {
+          width: 45%; } }
+      @media screen and (min-width: 1023px) {
+        .topContainer .achievement .privateAchievement button {
+          width: 30%; } }
+      .topContainer .achievement .privateAchievement button a {
+        font-size: 17px;
+        color: #AD9C76;
+        letter-spacing: 0.2rem; }
+        @media screen and (min-width: 767px) {
+          .topContainer .achievement .privateAchievement button a {
+            font-size: 20px; } }
+        .topContainer .achievement .privateAchievement button a:after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f105";
+          position: absolute;
+          right: 10px; }
+      .topContainer .achievement .privateAchievement button .faStyle {
+        margin-left: 16px; }
+    .topContainer .achievement .privateAchievement p span::after {
+      content: "\a";
+      white-space: pre; }
+    @media screen and (min-width: 767px) {
+      .topContainer .achievement .privateAchievement p span::after {
+        content: ""; } }
+    @media screen and (min-width: 1023px) {
+      .topContainer .achievement .privateAchievement p span::after {
+        content: ""; } }
+.topContainer .about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .topContainer .about .wrapper .item {
+    text-align: left; }
+    .topContainer .about .wrapper .item dt, .topContainer .about .wrapper .item dd {
+      display: inline-block; }
+    .topContainer .about .wrapper .item .skill dt {
+      display: block; }
+    .topContainer .about .wrapper .item .skill dd {
+      padding: 5px;
+      background-color: #EBE5D2;
+      border-radius: 4px;
+      margin: 5px 10px 0 0; }
+    .topContainer .about .wrapper .item p {
+      font-size: 14px; }
+      .topContainer .about .wrapper .item p a {
+        text-decoration: underline; }
+
+/*---------------------------------
+Color Setting
+---------------------------------*/
+/*---------------------------------
+ Responsive
+---------------------------------*/
+/* ============================================ */
+.worksMainImage {
+  background-image: url("../images/header_bg.png");
+  background-repeat: repeat;
+  width: 100%;
+  padding: 12vw 0 5vw; }
+  @media screen and (min-width: 1023px) {
+    .worksMainImage {
+      padding: 8vw 0 4vw; } }
+  .worksMainImage .container h2 {
+    color: #A3936B;
+    font-family: 'Echo R';
+    font-size: 22px;
+    line-height: 1.8rem;
+    letter-spacing: 0rem; }
+    @media screen and (min-width: 767px) {
+      .worksMainImage .container h2 {
+        font-size: 28px;
+        line-height: 2rem;
+        letter-spacing: 0.1rem; } }
+    @media screen and (min-width: 1023px) {
+      .worksMainImage .container h2 {
+        font-size: 33px;
+        line-height: 2.5rem;
+        letter-spacing: 0.3rem; } }
+    .worksMainImage .container h2 img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 50vw;
+      padding: 20px 0; }
+      @media screen and (min-width: 767px) {
+        .worksMainImage .container h2 img {
+          max-width: 40vw; } }
+      @media screen and (min-width: 1023px) {
+        .worksMainImage .container h2 img {
+          max-width: 23vw; } }
+    .worksMainImage .container h2 span::before, .worksMainImage .container h2 span::after {
+      content: "\a";
+      white-space: pre; }
+    @media screen and (min-width: 767px) {
+      .worksMainImage .container h2 span::before {
+        content: "\a";
+        white-space: pre; }
+      .worksMainImage .container h2 span::after {
+        content: ""; } }
+    @media screen and (min-width: 1023px) {
+      .worksMainImage .container h2 span::before {
+        content: "\a";
+        white-space: pre; }
+      .worksMainImage .container h2 span::after {
+        content: ""; } }
+  .worksMainImage .container p {
+    font-size: 12px;
+    padding: 15px 0;
+    font-weight: 700;
+    line-height: 1.3rem;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 767px) {
+      .worksMainImage .container p {
+        font-size: 14px;
+        padding: 25px 0;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 30px; } }
+    @media screen and (min-width: 1023px) {
+      .worksMainImage .container p {
+        padding-top: 20px;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 40px; } }
+
+.worksContainer .about {
+  width: 100%;
+  display: block;
+  padding: 15px 0 30px; }
+  @media screen and (min-width: 767px) {
+    .worksContainer .about {
+      padding: 15px 20px 70px; } }
+  @media screen and (min-width: 1023px) {
+    .worksContainer .about {
+      width: 1200px;
+      height: 450px;
+      margin: 0 auto; } }
+  .worksContainer .about img {
+    width: 100%;
+    max-width: 250px; }
+    @media screen and (min-width: 767px) {
+      .worksContainer .about img {
+        max-width: 230px; } }
+    @media screen and (min-width: 1023px) {
+      .worksContainer .about img {
+        max-width: 250px; } }
+  .worksContainer .about p {
+    color: #A3936B;
+    font-weight: 300;
+    font-size: 17px;
+    padding-top: 12px; }
+    @media screen and (min-width: 767px) {
+      .worksContainer .about p {
+        font-size: 15px;
+        padding-top: 20px; } }
+    @media screen and (min-width: 1023px) {
+      .worksContainer .about p {
+        font-size: 18px;
+        padding-top: 20px; } }
+  .worksContainer .about ul {
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 767px) {
+      .worksContainer .about ul {
+        display: table;
+        margin: 0 auto;
+        padding-top: 20px; } }
+    @media screen and (min-width: 1023px) {
+      .worksContainer .about ul {
+        display: table;
+        margin: 0 auto;
+        padding-top: 20px; } }
+  .worksContainer .about li {
+    display: block;
+    padding: 26px 0; }
+    .worksContainer .about li:nth-child(2) img {
+      max-width: 150px; }
+    @media screen and (min-width: 767px) {
+      .worksContainer .about li {
+        padding: 0 12px;
+        display: table-cell; }
+        .worksContainer .about li:nth-child(2) {
+          padding: 0 28px; }
+          .worksContainer .about li:nth-child(2) img {
+            max-width: 130px; } }
+    @media screen and (min-width: 1023px) {
+      .worksContainer .about li {
+        padding: 0 70px;
+        display: table-cell; }
+        .worksContainer .about li:nth-child(2) img {
+          max-width: 150px; } }
+.worksContainer .achievement {
+  width: 100%;
+  display: block;
+  padding: 15px 0 60px; }
+  @media screen and (min-width: 767px) {
+    .worksContainer .achievement {
+      padding-bottom: 70px; } }
+  @media screen and (min-width: 1023px) {
+    .worksContainer .achievement {
+      margin: 0 auto;
+      padding-bottom: 100px; } }
+  .worksContainer .achievement .item {
+    padding: 30px 0; }
+    @media screen and (min-width: 1023px) {
+      .worksContainer .achievement .item {
+        width: 80%;
+        margin: 0 auto; } }
+    .worksContainer .achievement .item .title {
+      padding: 10px 0;
+      display: inline-block;
+      position: relative; }
+      .worksContainer .achievement .item .title::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #D6D6D6;
+        border-radius: 2px; }
+    .worksContainer .achievement .item .slider {
+      margin: 40px 0 30px; }
+      @media screen and (min-width: 1023px) {
+        .worksContainer .achievement .item .slider {
+          padding: 10px 0; } }
+    .worksContainer .achievement .item .sliderItem {
+      width: 100%;
+      max-width: 216px;
+      padding-right: 10px; }
+      .worksContainer .achievement .item .sliderItem img {
+        width: 100%; }
+  .worksContainer .achievement .privateAchievement {
+    padding: 0 16px; }
+    .worksContainer .achievement .privateAchievement button {
+      border: solid 1px #AD9C76;
+      background-color: #fff;
+      padding: 20px 32px;
+      width: 100%;
+      border-radius: 4px;
+      margin: 40px 0 20px;
+      position: relative; }
+      @media screen and (min-width: 767px) {
+        .worksContainer .achievement .privateAchievement button {
+          width: 45%; } }
+      @media screen and (min-width: 1023px) {
+        .worksContainer .achievement .privateAchievement button {
+          width: 30%;
+          margin-top: 60px; } }
+      .worksContainer .achievement .privateAchievement button a {
+        font-size: 17px;
+        color: #AD9C76;
+        letter-spacing: 0.2rem; }
+        @media screen and (min-width: 767px) {
+          .worksContainer .achievement .privateAchievement button a {
+            font-size: 20px; } }
+        .worksContainer .achievement .privateAchievement button a:after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f105";
+          position: absolute;
+          right: 10px; }
+      .worksContainer .achievement .privateAchievement button .faStyle {
+        margin-left: 16px; }
+    .worksContainer .achievement .privateAchievement p span::after {
+      content: "\a";
+      white-space: pre; }
+    @media screen and (min-width: 767px) {
+      .worksContainer .achievement .privateAchievement p span::after {
+        content: ""; } }
+    @media screen and (min-width: 1023px) {
+      .worksContainer .achievement .privateAchievement p span::after {
+        content: ""; } }
+
+/*---------------------------------
+Color Setting
+---------------------------------*/
+/*---------------------------------
+ Responsive
+---------------------------------*/
+/* ============================================ */
+.contactMainImage {
+  background-image: url("../images/header_bg.png");
+  background-repeat: repeat;
+  width: 100%;
+  padding: 60px 16px 15px; }
+  @media screen and (min-width: 767px) {
+    .contactMainImage {
+      padding-top: 80px; } }
+  @media screen and (min-width: 1023px) {
+    .contactMainImage {
+      padding-top: 64px; } }
+  @media screen and (min-width: 1023px) {
+    .contactMainImage .container {
+      padding: 30px 0; } }
+  .contactMainImage .container h2 {
+    color: #A3936B;
+    font-family: 'Echo R';
+    font-size: 22px;
+    line-height: 1.8rem;
+    letter-spacing: 0rem; }
+    @media screen and (min-width: 767px) {
+      .contactMainImage .container h2 {
+        font-size: 28px;
+        line-height: 2rem;
+        letter-spacing: 0.1rem; } }
+    @media screen and (min-width: 1023px) {
+      .contactMainImage .container h2 {
+        font-size: 33px;
+        line-height: 2.5rem;
+        letter-spacing: 0.3rem; } }
+    .contactMainImage .container h2 img {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 300px;
+      padding: 25px 0; }
+      @media screen and (min-width: 767px) {
+        .contactMainImage .container h2 img {
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 300px;
+          padding: 70px 0 25px; } }
+      @media screen and (min-width: 1023px) {
+        .contactMainImage .container h2 img {
+          width: 100%;
+          max-width: 297px;
+          padding: 64px 0 35px; } }
+    .contactMainImage .container h2 span::before, .contactMainImage .container h2 span::after {
+      content: "\a";
+      white-space: pre; }
+    @media screen and (min-width: 767px) {
+      .contactMainImage .container h2 span::before {
+        content: "\a";
+        white-space: pre; }
+      .contactMainImage .container h2 span::after {
+        content: ""; } }
+    @media screen and (min-width: 1023px) {
+      .contactMainImage .container h2 span::before {
+        content: "\a";
+        white-space: pre; }
+      .contactMainImage .container h2 span::after {
+        content: ""; } }
+  .contactMainImage .container p {
+    font-size: 12px;
+    padding: 15px 0;
+    font-weight: 700;
+    line-height: 1.3rem;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 767px) {
+      .contactMainImage .container p {
+        font-size: 14px;
+        padding: 25px 0;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 30px; } }
+    @media screen and (min-width: 1023px) {
+      .contactMainImage .container p {
+        padding-top: 20px;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 40px; } }
+
+.contactContainer .about {
+  width: 100%;
+  display: block;
+  padding: 15px 0 30px; }
+  @media screen and (min-width: 767px) {
+    .contactContainer .about {
+      padding: 15px 20px 70px; } }
+  @media screen and (min-width: 1023px) {
+    .contactContainer .about {
+      width: 1200px;
+      height: 450px;
+      margin: 0 auto; } }
+  .contactContainer .about img {
+    width: 100%;
+    max-width: 250px; }
+    @media screen and (min-width: 767px) {
+      .contactContainer .about img {
+        max-width: 230px; } }
+    @media screen and (min-width: 1023px) {
+      .contactContainer .about img {
+        max-width: 250px; } }
+  .contactContainer .about p {
+    color: #A3936B;
+    font-weight: 300;
+    font-size: 17px;
+    padding-top: 12px; }
+    @media screen and (min-width: 767px) {
+      .contactContainer .about p {
+        font-size: 15px;
+        padding-top: 20px; } }
+    @media screen and (min-width: 1023px) {
+      .contactContainer .about p {
+        font-size: 18px;
+        padding-top: 20px; } }
+  .contactContainer .about ul {
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 767px) {
+      .contactContainer .about ul {
+        display: table;
+        margin: 0 auto;
+        padding-top: 20px; } }
+    @media screen and (min-width: 1023px) {
+      .contactContainer .about ul {
+        display: table;
+        margin: 0 auto;
+        padding-top: 20px; } }
+  .contactContainer .about li {
+    display: block;
+    padding: 26px 0; }
+    .contactContainer .about li:nth-child(2) img {
+      max-width: 150px; }
+    @media screen and (min-width: 767px) {
+      .contactContainer .about li {
+        padding: 0 12px;
+        display: table-cell; }
+        .contactContainer .about li:nth-child(2) {
+          padding: 0 28px; }
+          .contactContainer .about li:nth-child(2) img {
+            max-width: 130px; } }
+    @media screen and (min-width: 1023px) {
+      .contactContainer .about li {
+        padding: 0 70px;
+        display: table-cell; }
+        .contactContainer .about li:nth-child(2) img {
+          max-width: 150px; } }
+.contactContainer .achievement {
+  width: 100%;
+  display: block;
+  padding: 15px 0 60px; }
+  @media screen and (min-width: 767px) {
+    .contactContainer .achievement {
+      padding-bottom: 70px; } }
+  @media screen and (min-width: 1023px) {
+    .contactContainer .achievement {
+      margin: 0 auto;
+      padding-bottom: 100px; } }
+  .contactContainer .achievement .item {
+    padding: 30px 0; }
+    @media screen and (min-width: 1023px) {
+      .contactContainer .achievement .item {
+        width: 80%;
+        margin: 0 auto; } }
+    .contactContainer .achievement .item .title {
+      padding: 10px 0;
+      display: inline-block;
+      position: relative; }
+      .contactContainer .achievement .item .title::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        display: inline-block;
+        width: 40px;
+        height: 4px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #D6D6D6;
+        border-radius: 2px; }
+    .contactContainer .achievement .item .slider {
+      margin: 40px 0 30px; }
+      @media screen and (min-width: 1023px) {
+        .contactContainer .achievement .item .slider {
+          padding: 10px 0; } }
+    .contactContainer .achievement .item .sliderItem {
+      width: 100%;
+      max-width: 216px;
+      padding-right: 10px; }
+      .contactContainer .achievement .item .sliderItem img {
+        width: 100%; }
+  .contactContainer .achievement .privateAchievement {
+    padding: 0 16px; }
+    .contactContainer .achievement .privateAchievement button {
+      border: solid 1px #AD9C76;
+      background-color: #fff;
+      padding: 20px 32px;
+      width: 100%;
+      border-radius: 4px;
+      margin: 40px 0 20px;
+      position: relative; }
+      @media screen and (min-width: 767px) {
+        .contactContainer .achievement .privateAchievement button {
+          width: 45%; } }
+      @media screen and (min-width: 1023px) {
+        .contactContainer .achievement .privateAchievement button {
+          width: 30%;
+          margin-top: 60px; } }
+      .contactContainer .achievement .privateAchievement button a {
+        font-size: 17px;
+        color: #AD9C76;
+        letter-spacing: 0.2rem; }
+        @media screen and (min-width: 767px) {
+          .contactContainer .achievement .privateAchievement button a {
+            font-size: 20px; } }
+        .contactContainer .achievement .privateAchievement button a:after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f105";
+          position: absolute;
+          right: 10px; }
+      .contactContainer .achievement .privateAchievement button .faStyle {
+        margin-left: 16px; }
+    .contactContainer .achievement .privateAchievement p span::after {
+      content: "\a";
+      white-space: pre; }
+    @media screen and (min-width: 767px) {
+      .contactContainer .achievement .privateAchievement p span::after {
+        content: ""; } }
+    @media screen and (min-width: 1023px) {
+      .contactContainer .achievement .privateAchievement p span::after {
+        content: ""; } }
+/*# sourceMappingURL=common.css.map */

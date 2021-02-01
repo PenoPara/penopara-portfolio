@@ -1,0 +1,303 @@
+@charset"utf-8";
+@import "module/_variable";
+/* ============================================ */
+
+.topMainImage{
+  background-image: url("../images/header_bg.png");
+  background-repeat: repeat;
+  width:100%;
+  padding: 60px 16px 15px;
+  @include mq-up(){
+    padding-top: 80px;
+  }
+  @include mq-up(lg){
+    padding-top: 64px;
+  }
+  .container{
+    @include mq-up(lg){
+      padding: 30px 0;
+    }
+    h2{
+      color: $color_main;
+      font-family:'Echo R';
+      font-size: 22px;
+      line-height: 1.8rem;
+      letter-spacing: 0rem;
+      @include mq-up(){
+        font-size: 28px;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+      }
+      @include mq-up(lg){
+        font-size: 33px;
+        line-height: 2.5rem;
+        letter-spacing: 0.3rem;
+      }
+      img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 300px;
+        padding: 25px 0;
+        @include mq-up(){
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 300px;
+          padding: 70px 0 25px;
+        }
+        @include mq-up(lg){
+          width: 100%;
+          max-width: 297px;
+          padding: 64px 0 35px;
+        }
+      }
+      span{
+        &::before, &::after{
+        content: "\A" ;
+        white-space: pre;
+        }
+        @include mq-up(){
+          &::before{
+            content: "\A" ;
+            white-space: pre;
+          }
+          &::after{
+            content: "" ;
+          }
+        }
+        @include mq-up(lg){
+          &::before{
+            content: "\A" ;
+            white-space: pre;
+          }
+          &::after{
+            content: "" ;
+          }
+        }
+      }
+    }
+    p{
+      font-size: 12px;
+      padding: 15px 0;
+      font-weight: 700;
+      line-height: 1.3rem;
+      margin-bottom: 20px;
+      @include mq-up(){
+        font-size: 14px;
+        padding: 25px 0;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 30px;
+      }
+      @include mq-up(lg){
+        padding-top: 20px;
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.topContainer{
+  .about{
+    width:100%;
+    display: block;
+    padding: 15px 0 30px;
+    @include mq-up(){
+      padding: 15px 20px 70px;
+    }
+    @include mq-up(lg){
+      width: 1200px;
+      height: 450px;
+      margin: 0 auto;
+    }
+    img{
+      width: 100%;
+      max-width: 250px;
+      @include mq-up(){
+        max-width: 230px;
+      }
+      @include mq-up(lg){
+        max-width: 250px;
+      }
+    }
+    p{
+      color: $color_main;
+      font-weight: 300;
+      font-size: 17px;
+      padding-top: 12px;
+      @include mq-up(){
+        font-size: 15px;
+        padding-top: 20px;
+      }
+      @include mq-up(lg){
+        font-size: 18px;
+        padding-top: 20px;
+      }
+    }
+    ul{
+      display: block;
+      margin: 0 auto;
+      @include mq-up(){
+        display: table;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+      @include mq-up(lg){
+        display: table;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+    }
+    li{
+      display: block;
+      padding: 26px 0;
+      &:nth-child(2){
+        img{
+          max-width: 150px;
+        }
+      }
+      @include mq-up(){
+        padding: 0 12px;
+        display: table-cell;
+        &:nth-child(2){
+          padding: 0 28px;
+          img{
+            max-width: 130px;
+          }
+        }
+      }
+      @include mq-up(lg){
+        padding: 0 70px;
+        display: table-cell;
+        &:nth-child(2){
+          img{
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+  .achievement{
+    width:100%;
+    display: block;
+    padding: 15px 0 60px;
+    @include mq-up(){
+      padding-bottom: 50px;
+    }
+    @include mq-up(lg){
+      margin: 0 auto;
+      padding-bottom: 100px;
+    }
+    p{
+
+    }
+    .item{
+      padding: 30px 0;
+      @include mq-up(lg){
+        width: 80%;
+        margin: 0 auto;
+      }
+      .slider{
+        margin-bottom: 30px;
+        @include mq-up(lg){
+          padding: 10px 0;
+        }
+      }
+      .sliderItem{
+        width: 100%;
+        max-width: 216px;
+        padding-right: 10px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .privateAchievement{
+      padding: 0 16px;
+      button{
+        border: solid 1px $color_primary;
+        background-color: #fff;
+        padding: 20px 32px;
+        width: 100%;
+        border-radius: 4px;
+        margin: 20px 0;
+        position: relative;
+        @include mq-up(){
+          width: 45%;
+        }
+        @include mq-up(lg){
+          width: 30%;
+        }
+        a{
+          font-size: 17px;
+          color: $color_primary;
+          letter-spacing: 0.2rem;
+          @include mq-up(){
+   				 font-size: 20px;
+   			 }
+          &:after{
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f105";
+            position: absolute;
+            right: 10px;
+          }
+        }
+        .faStyle{
+          margin-left: 16px;
+        }
+      }
+      p{
+        span{
+          &::after{
+          content: "\A" ;
+          white-space: pre;
+          }
+          @include mq-up(){
+            &::after{
+            content: "" ;
+            }
+          }
+          @include mq-up(lg){
+            &::after{
+              content: "" ;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about{
+    .wrapper{
+      display: flex;
+      .item{
+        text-align: left;
+        dt,dd{
+          display: inline-block;
+        }
+        .skill{
+          dt{
+            display: block;
+          }
+          dd{
+            padding: 5px;
+            background-color: $color_primaryBG;
+            border-radius: 4px;
+            margin: 5px 10px 0 0;
+          }
+        }
+        p{
+          font-size: 14px;
+          a{
+            text-decoration: underline;
+          }
+        }
+      }
+
+    }
+
+  }
+}
